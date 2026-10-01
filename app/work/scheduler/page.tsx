@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { Nav, ArrowDownRight, ArrowUpRight, SchedulerVisual } from '../../ui';
 
-function Section({number, eyebrow, title, children, className='' }:{number:string;eyebrow:string;title:string;children:ReactNode;className?:string}){
+function Section({number, eyebrow, title, children, className='' }:{number:string;eyebrow:string;title:ReactNode;children:ReactNode;className?:string}){
   return <section className={`case-section site-width ${className}`}>
     <div className="case-section-intro"><span className="section-number">{number}</span><div><p className="overline">{eyebrow}</p><h2>{title}</h2></div></div>
     {children}
